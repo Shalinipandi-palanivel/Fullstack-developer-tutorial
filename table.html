@@ -5,31 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;            
+        }
+        td{
+            padding:auto;
+        }
+        th{
+            border: 1px solid red;
+        }
+        td{
+            border: 1px solid red;
+        }
+        .head{
+            font-size: 18px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        .data{
+            font-size:15px;
+        }
+        #no-data{
+            color: green;
+            text-align: center;
+        }
+        tr:nth-child(even){
+            background-color: whitesmoke;
+        }
+    </style>
 </head>
 <body>
-    <table style = "padding: 30px;">
+    <section style = "padding:30px;" >
+    <table cellpadding = "5" cellspacing= "5">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Qualification</th>
-                <th>course</th>
-                <th>DOB</th>
+                <th class = "head">Name</th>
+                <th class = "head">Qualification</th>
+                <th class = "head">course</th>
+                <th class = "head">DOB</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Seetha</td>
-                <td>BE</td>
-                <td>Automation testing</td>
-                <td>01/11/1994</td>
+                <td class ="data">Seetha</td>
+                <td class ="data">BE</td>
+                <td class ="data">Automation testing</td>
+                <td class ="data">01/11/1994</td>
             </tr>
             <tr>
-                <td>Mevin</td>
-                <td>BE</td>
-                <td>Web development</td>
-                <td>01/10/1994</td>
+                <td class ="data">Mevin</td>
+                <td class ="data">BE</td>
+                <td class ="data">Web development</td>
+                <td class ="data">01/10/1994</td>
+            </tr>
+            <tr>
+                <td class ="data">kevin</td>
+                <td colspan = "2" id = "no-data" class ="data">Data not shared</td>
+                <td class ="data">01/10/1994</td>
+            </tr>
+            <tr>
+                <td class ="data">Seetha</td>
+                <td class ="data">BE</td>
+                <td class ="data">Automation testing</td>
+                <td class ="data">01/11/1994</td>
+            </tr>
+            <tr>
+                <td rowspan = "2" class ="data">Seetha</td>
+                <td class ="data">BE</td>
+                <td rowspan = "2"class ="data">Software Engineer</td>
+                <td class ="data">01/11/1994</td>
+            </tr>
+            <tr>
+                <td class ="data">MCA</td>
+                <td class ="data">01/11/1994</td>
             </tr>
         </tbody>
-    </table>   
+    </table>
+    </section>   
 </body>
 </html>
