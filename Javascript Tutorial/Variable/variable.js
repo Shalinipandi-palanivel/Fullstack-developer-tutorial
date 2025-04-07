@@ -1,6 +1,6 @@
 //variables - global variable, local variable 
 
-//it's a globle scope variable as the variables are not mentioned before the variable "val" and can be accessed outside the function
+//it's a global scope variable as the variables are not mentioned before the variable "val" and can be accessed outside the function
 //global- window object
 
 function global(){
@@ -18,6 +18,7 @@ function global(){
 //var - function scope
 
 function print(){
+    //Temporary dead zone
     console.log(a); //undefined
     var a = 20;
     console.log(a);
@@ -30,7 +31,8 @@ function print(){
 // let - block scope 
 // Temporary dead zone - let declaration is not hoisted to the function
 
-function print() {    
+function print() { 
+     //Temporary dead zone
     //console.log(a); - throws error
     let a = 10;
     console.log(a);
