@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimerApp</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #timer {  
+            display: flex;         
+            width: 100%;   
+            align-items: center;
+            justify-content: center;
+            align-items: baseline;
+        }
+        #button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        .min-count, .sec-count {
+            font-size: 80px;
+
+        }
+        .min-suffix, .sec-suffix {
+            font-size: 30px;
+            margin-right: 20px;
+        }       
+        .start-button {
+                background-color: #1a73e8;
+                color: white;
+                border-radius: 2px;
+                padding: 5px 10px;
+                border: 1px solid #1461c5;
+                cursor: pointer;
+            }
+
+            .reset-button {
+                background-color: white;
+                color: #1461c5;     
+                border-radius: 2px;
+                padding: 5px 10px;
+                border: 1px solid #1461c5;
+                cursor: pointer;
+            }
+            .timer-input{
+                margin: 20px;
+            }
+
+    </style>
+
+</head>
+<body>
+    <input type="number" class="timer-input" placeholder="Enter the time in minutes"/>
+   <script src = './timer.js'></script> 
+</body>
+</html>
